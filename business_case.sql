@@ -63,7 +63,7 @@ ORDER BY
 
 
 -- Business Case 2: Customer Status by Last Transaction
--- Table 2.1
+-- Table 2.1 Customer Status Breakdown by Country
 WITH last_transaction AS (
     SELECT
         c.customer_id,
@@ -104,7 +104,7 @@ GROUP BY
 ORDER BY
     country;
 
--- Table 2.2
+-- Table 2.2 Team Allocation and Customer Distribution by Status
 WITH last_transaction AS (
     SELECT
         c.customer_id,
